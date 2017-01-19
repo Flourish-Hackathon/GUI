@@ -26,7 +26,6 @@ public class Player {
         for (int i=0; i<maxField; i++) {
             fieldButtons[i] = new Button();
         }
-
     }
 
     public HBox getDeckHandStats() {
@@ -41,6 +40,10 @@ public class Player {
             deckHandStats.getChildren().add(stats);
             deckHandStats.getChildren().add(hand);
             deckHandStats.getChildren().add(deck);
+
+            deck.setId("p2deck");
+            hand.setId("p2hand");
+            stats.setId("p2stats");
         }
         else {
             for (int i=0; i<maxHand; i++) {
@@ -53,9 +56,14 @@ public class Player {
             deckHandStats.getChildren().add(deck);
             deckHandStats.getChildren().add(hand);
             deckHandStats.getChildren().add(stats);
+
+            deck.setId("p1deck");
+            hand.setId("p1hand");
+            stats.setId("p1stats");
         }
 
-
+        label1.setId("health");
+        label2.setId("resources");
         return deckHandStats;
     }
 
@@ -64,11 +72,13 @@ public class Player {
             for (int i=maxField-1; i>=0; i--) {
                 field.getChildren().add(fieldButtons[i]);
             }
+            field.setId("p2field");
         }
         else {
             for (int i = 0; i < maxField; i++) {
                 field.getChildren().add(fieldButtons[i]);
             }
+            field.setId("p1field");
         }
         return field;
     }

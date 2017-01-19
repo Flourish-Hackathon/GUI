@@ -1,0 +1,63 @@
+#p1deck {
+    -fx-background-image: url('images/cardback.png');
+    -fx-pref-height: 200px;
+    -fx-pref-width: 145px;
+    -fx-background-size: stretch;
+}
+
+#p2deck {
+    -fx-background-image: url('images/cardback.png');
+    -fx-pref-height: 200px;
+    -fx-pref-width: 145px;
+    -fx-background-size: stretch;
+}
+
+#p1hand .button {
+    -fx-background-image: url('images/hand.jpg');
+    -fx-pref-height: 125px;
+    -fx-pref-width: 90px;
+    -fx-background-size: stretch;
+}
+
+#p1hand, #p2hand {
+    -fx-alignment: center;
+}
+
+#p2hand .button {
+    -fx-background-image: url('images/hand.jpg');
+    -fx-pref-height: 125px;
+    -fx-pref-width: 90px;
+    -fx-background-size: stretch;
+}
+
+#p1field, #p2field {
+    -fx-alignment: center;
+}
+
+#p1field .button {
+    -fx-background-image: url('images/field.png');
+    -fx-pref-height: 150px;
+    -fx-pref-width: 105px;
+    -fx-background-size: stretch;
+}
+
+#p2field .button {
+    -fx-background-image: url('images/field.png');
+    -fx-pref-height: 150px;
+    -fx-pref-width: 105px;
+    -fx-background-size: stretch;
+}
+
+#p1stats, #p2stats {
+    -fx-alignment: center;
+}
+
+#health {
+    -fx-text-fill: red;
+    -fx-font-size: 20px;
+}
+
+#resources {
+    -fx-text-fill: blue;
+    -fx-font-size: 20px;
+}

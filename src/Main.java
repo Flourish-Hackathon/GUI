@@ -5,8 +5,8 @@ import javafx.stage.Stage;
 
 public class Main extends Application {
     private VBox playerPanes = new VBox(20);
-    private VBox p1Layout = new VBox(5);
-    private VBox p2Layout = new VBox(5);
+    private VBox p1Layout = new VBox(20);
+    private VBox p2Layout = new VBox(20);
 
     @Override
     public void start(Stage primaryStage) throws Exception {

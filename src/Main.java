@@ -10,8 +10,8 @@ public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception {
-        Player p1 = new Player();
-        Player p2 = new Player();
+        Player p1 = new Player(1);
+        Player p2 = new Player(2);
 
         p2Layout.getChildren().add(p2.getDeckHandStats());
         p2Layout.getChildren().add(p2.getField());
